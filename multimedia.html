@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlobalLens News Portal | Multimedia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">GlobalLens News</h1>
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="article.html">Article</a></li>
+          <li><a href="multimedia.html" class="active">Multimedia</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Multimedia News</h2>
+      <p>Watch curated video reports and browse visual highlights from recent events.</p>
+    </section>
+
+    <section class="panel video-wrap">
+      <h3>Latest Community News Footage</h3>
+      <div class="responsive-video">
+        <video class="news-video" controls playsinline preload="metadata">
+          <source
+            src="https://upload.wikimedia.org/wikipedia/commons/8/8e/VOA_footage_of_seized_Iranian_oil_tanker_Grace_1_in_Gibraltar.webm"
+            type="video/webm"
+          >
+        </video>
+      </div>
+
+      <div class="video-error" hidden>
+        <p>Video Unavailable - Click to Retry</p>
+        <button class="btn video-retry" type="button">Retry</button>
+      </div>
+    </section>
+
+    <section>
+      <h3>Latest News Videos </h3>
+      <div class="video-grid">
+        <article class="panel">
+          <h4>News Footage (VOA)</h4>
+          <div class="responsive-video">
+            <video class="news-video" controls playsinline preload="metadata">
+              <source
+                src="https://upload.wikimedia.org/wikipedia/commons/8/8e/VOA_footage_of_seized_Iranian_oil_tanker_Grace_1_in_Gibraltar.webm"
+                type="video/webm"
+              >
+            </video>
+          </div>
+          <div class="video-error" hidden>
+            <p>Video Unavailable - Click to Retry</p>
+            <button class="btn video-retry" type="button">Retry</button>
+          </div>
+        </article>
+        <article class="panel">
+          <h4>News Report (Wikinews)</h4>
+          <div class="responsive-video">
+            <video class="news-video" controls playsinline preload="metadata">
+              <source
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Wikinews_Cricket_HD.ogv"
+                type="video/ogg"
+              >
+              <source
+                src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b6/Wikinews_Cricket_HD.ogv/Wikinews_Cricket_HD.ogv.360p.webm?download"
+                type="video/webm"
+              >
+            </video>
+          </div>
+          <div class="video-error" hidden>
+            <p>Video Unavailable - Click to Retry</p>
+            <button class="btn video-retry" type="button">Retry</button>
+          </div>
+        </article>
+        <article class="panel">
+          <h4>Broadcast News (NRK)</h4>
+          <div class="responsive-video">
+            <video class="news-video" controls playsinline preload="metadata">
+              <source
+                src="https://upload.wikimedia.org/wikipedia/commons/2/2f/NRK_Alltid_Nyheter_april_2007.ogv"
+                type="video/ogg"
+              >
+              <source
+                src="https://upload.wikimedia.org/wikipedia/commons/transcoded/2/2f/NRK_Alltid_Nyheter_april_2007.ogv/NRK_Alltid_Nyheter_april_2007.ogv.360p.webm?download"
+                type="video/webm"
+              >
+            </video>
+          </div>
+          <div class="video-error" hidden>
+            <p>Video Unavailable - Click to Retry</p>
+            <button class="btn video-retry" type="button">Retry</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h3>Newsroom Microphone & Radio Studio</h3>
+      <p>Real audio visuals to show this page is designed for news, interviews, and broadcasts.</p>
+      <div class="grid-2">
+        <figure class="gallery-item">
+          <img
+            src="images/Microphone_studio.jpg"
+            alt="Microphone studio showing broadcast audio setup"
+          >
+          <figcaption>Microphone setup for reporting and live interviews.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img
+            src="images/news_studio.jfif"
+            alt="Radio studio showing everyday news production"
+          >
+          <figcaption>Radio/podcast interview desk for everyday news stories.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h3>Audio Bulletin: Live Radio Stations</h3>
+      <p>Tap Play to start each live station. If a stream fails, use Retry.</p>
+
+      <div class="radio-grid">
+        <article class="panel">
+          <h4>SABC News</h4>
+          <audio class="radio-audio" preload="none">
+            <source src="https://streams.sabc.co.za/sabc-news.mp3" type="audio/mpeg">
+          </audio>
+          <div class="radio-controls">
+            <button class="btn radio-play" type="button">Play</button>
+            <button class="btn radio-retry" type="button" hidden>Retry</button>
+          </div>
+          <p class="radio-status muted" aria-live="polite"></p>
+          <div class="radio-error" hidden>Stream Unavailable - Click to Retry</div>
+        </article>
+
+        <article class="panel">
+          <h4>Lesedi FM</h4>
+          <audio class="radio-audio" preload="none">
+            <source src="https://streams.sabc.co.za/lesedifm.mp3" type="audio/mpeg">
+          </audio>
+          <div class="radio-controls">
+            <button class="btn radio-play" type="button">Play</button>
+            <button class="btn radio-retry" type="button" hidden>Retry</button>
+          </div>
+          <p class="radio-status muted" aria-live="polite"></p>
+          <div class="radio-error" hidden>Stream Unavailable - Click to Retry</div>
+        </article>
+
+        <article class="panel">
+          <h4>Ultimate Radio</h4>
+          <audio class="radio-audio" preload="none">
+            <source src="https://stream.ultimatefm.co.ls/radio" type="audio/mpeg">
+          </audio>
+          <div class="radio-controls">
+            <button class="btn radio-play" type="button">Play</button>
+            <button class="btn radio-retry" type="button" hidden>Retry</button>
+          </div>
+          <p class="radio-status muted" aria-live="polite"></p>
+          <div class="radio-error" hidden>Stream Unavailable - Click to Retry</div>
+        </article>
+
+        <article class="panel">
+          <h4>Radio Lesotho</h4>
+          <audio class="radio-audio" preload="none">
+            <source src="https://radiolesotho.stream.ls/live" type="audio/mpeg">
+          </audio>
+          <div class="radio-controls">
+            <button class="btn radio-play" type="button">Play</button>
+            <button class="btn radio-retry" type="button" hidden>Retry</button>
+          </div>
+          <p class="radio-status muted" aria-live="polite"></p>
+          <div class="radio-error" hidden>Stream Unavailable - Click to Retry</div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h3>Africa in Focus (Beauty + News)</h3>
+      <div class="grid-3">
+        <figure class="gallery-item">
+          <img
+            src="images/Lesotho_landscapes.jpg"
+            alt="Lesotho landscape representing local news coverage"
+          >
+          <figcaption>Lesotho landscapes powering community storytelling.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img
+            src="images/south_afrca_country_side.jfif"
+            alt="South African countryside representing regional stories"
+          >
+          <figcaption>South Africa countryside connected to daily reporting.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img
+            src="images/savanna_grass_land.jpg"
+            alt="African savanna grasslands representing beauty across Africa"
+          >
+          <figcaption>Savanna grasslands: beauty and environment news.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img
+src="images/savanna_grass_land.jpg"
+            alt="Map of Africa representing continental coverage"
+          >
+          <figcaption>Africa map for cross-border reporting context.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img
+            src="images/news_studio.jfif"
+            alt="News studio scene representing television reporting"
+          >
+          <figcaption>News studios: where stories become broadcasts.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img
+            src="images/Microphone_studio.jpg"
+            alt="Microphone studio image representing interviews and reporting"
+          >
+          <figcaption>Microphones for interviews, reporting, and podcasts.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 GlobalLens News Portal. Built for BIWD2210 Web Technology.</p>
+    </div>
+  </footer>
+
+  <script src="media.js" defer></script>
+</body>
+</html>

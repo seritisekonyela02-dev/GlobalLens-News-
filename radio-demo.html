@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stable Radio Demo</title>
+  <link rel="stylesheet" href="radio-styles.css">
+</head>
+<body>
+  <div class="stable-radio-section">
+    <div class="radio-grid">
+      <div class="radio-station" data-station="bbc">
+        <h4>BBC World Service</h4>
+        <audio></audio>
+        <div class="controls">
+          <button class="btn-play play">▶ Play</button>
+          <button class="btn-pause pause" disabled>⏸ Pause</button>
+          <button class="btn-stop stop" disabled>⏹ Stop</button>
+          <button class="btn-retry retry" disabled>🔄 Retry</button>
+        </div>
+        <div class="status">Ready</div>
+        <input type="range" class="volume">
+        <span class="live" hidden>● LIVE</span>
+      </div>
+      <!-- Add 3 more identical panels with data-station="sabc", "lesotho", "capetalk" -->
+    </div>
+  </div>
+  <script src="radio.js"></script>
+</body>
+</html>
+

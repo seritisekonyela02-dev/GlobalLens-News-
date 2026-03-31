@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlobalLens News Portal | Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">GlobalLens News</h1>
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="article.html">Article</a></li>
+          <li><a href="multimedia.html">Multimedia</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Trusted Headlines for a Connected World</h2>
+      <p>
+        Explore local and international stories in politics, technology, culture,
+        and sports with quick updates and deeper analysis.
+      </p>
+      <a class="btn" href="article.html">Read Featured Story</a>
+    </section>
+
+    <section>
+      <h2>Featured News</h2>
+      <div class="grid-3">
+        <article class="card">
+          <img
+            src="images/Microphone_studio.jpg"
+            alt="Microphone studio image representing broadcast reporting"
+          >
+          <div class="card-body">
+            <h3>Digital Startups Boost Local Economy</h3>
+            <p>Young entrepreneurs launch media-tech ventures creating jobs in regional communities.</p>
+            <a href="article.html">Read more</a>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            src="images/news_studio.jfif"
+            alt="Radio studio image showing live news production"
+          >
+          <div class="card-body">
+            <h3>Public Forum Reviews City Media Access</h3>
+            <p>Residents discuss fair representation and access to information platforms.</p>
+            <a href="categories.html">Explore category</a>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            src="images/microphone-breaking-news.webp"
+            alt="News studio image representing television broadcasting"
+          >
+          <div class="card-body">
+
+            <h3>Video Journalism Trends in 2026</h3>
+            <p>Newsrooms adapt short-form storytelling for social and broadcast channels.</p>
+            <a href="multimedia.html">Watch reports</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Africa Regional Spotlight</h2>
+      <div class="grid-3">
+        <article class="card">
+          <img
+            src="images/Lesotho_landscapes.jpg"
+            alt="Lesotho landscape representing local journalism coverage"
+          >
+          <div class="card-body">
+            <h3>Lesotho: Youth Media Labs Expand in Maseru</h3>
+            <p>Community radio and journalism students launch weekly digital storytelling workshops.</p>
+            <a href="article.html">Read Lesotho feature</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src=\"images/south_afrca_country_side.jfif\"
+            alt="South Africa countryside representing regional news stories"
+          >
+          <div class="card-body">
+            <h3>South Africa: Local Newsrooms Invest in Data Journalism</h3>
+            <p>Editors in Johannesburg and Cape Town report stronger audience engagement with visual explainers.</p>
+            <a href="categories.html">View South Africa updates</a>
+          </div>
+        </article>
+        <article class="card">
+          <img
+src="images/savanna_grass_land.jpg"
+            alt="Map of Africa representing cross-border news coverage"
+          >
+          <div class="card-body">
+            <h3>Africa: Cross-Border Reporting Partnerships Grow</h3>
+            <p>Regional media houses collaborate on climate, education, and migration investigations.</p>
+            <a href="multimedia.html">Watch Africa reports</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="ai-digest">
+      <h2><span class="ai-badge">AI RSS Digest</span> Daily Headlines for Africa</h2>
+      <p class="muted">
+        Multi-source news digest (RSS) for Lesotho, South Africa, and Africa. Headlines load automatically when your browser allows
+        cross-origin requests.
+      </p>
+      <div id="digest-status" class="muted">Loading latest stories...</div>
+      <div class="digest-actions">
+        <button class="btn" id="digest-refresh" type="button">Refresh Digest</button>
+        <span id="digest-updated" class="muted"></span>
+      </div>
+      <ul id="digest-list" class="digest-list" aria-live="polite">
+        <li class="digest-item">Tip: If nothing loads, open this page again after a minute.</li>
+      </ul>
+    </section>
+
+
+
+    <section>
+      <h2>Latest News Videos</h2>
+      <div class="video-grid">
+        <article class="panel">
+          <h3>News Footage (VOA)</h3>
+          <div class="responsive-video">
+            <video class="news-video" controls playsinline preload="metadata">
+              <source
+                src="https://upload.wikimedia.org/wikipedia/commons/8/8e/VOA_footage_of_seized_Iranian_oil_tanker_Grace_1_in_Gibraltar.webm"
+                type="video/webm"
+              >
+            </video>
+          </div>
+          <div class="video-error" hidden>
+            <p>Video Unavailable - Click to Retry</p>
+            <button class="btn video-retry" type="button">Retry</button>
+          </div>
+        </article>
+
+        <article class="panel">
+          <h3>News Report (Wikinews)</h3>
+          <div class="responsive-video">
+            <video class="news-video" controls playsinline preload="metadata">
+              <source
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Wikinews_Cricket_HD.ogv"
+                type="video/ogg"
+              >
+              <source
+                src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b6/Wikinews_Cricket_HD.ogv/Wikinews_Cricket_HD.ogv.360p.webm?download"
+                type="video/webm"
+              >
+            </video>
+          </div>
+          <div class="video-error" hidden>
+            <p>Video Unavailable - Click to Retry</p>
+            <button class="btn video-retry" type="button">Retry</button>
+          </div>
+        </article>
+
+        <article class="panel">
+          <h3>Broadcast News (NRK)</h3>
+          <div class="responsive-video">
+            <video class="news-video" controls playsinline preload="metadata">
+              <source
+                src="https://upload.wikimedia.org/wikipedia/commons/2/2f/NRK_Alltid_Nyheter_april_2007.ogv"
+                type="video/ogg"
+              >
+              <source
+                src="https://upload.wikimedia.org/wikipedia/commons/transcoded/2/2f/NRK_Alltid_Nyheter_april_2007.ogv/NRK_Alltid_Nyheter_april_2007.ogv.360p.webm?download"
+                type="video/webm"
+              >
+            </video>
+          </div>
+          <div class="video-error" hidden>
+            <p>Video Unavailable - Click to Retry</p>
+            <button class="btn video-retry" type="button">Retry</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Trending Stories</h2>
+      <ul class="list-inline">
+        <li><a href="article.html">Lesotho election coverage updates</a></li>
+        <li><a href="article.html">South Africa broadcast ethics and AI</a></li>
+        <li><a href="article.html">Campus media spotlight in Southern Africa</a></li>
+        <li><a href="article.html">Climate reporting across Africa</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 GlobalLens News Portal. Built for BIWD2210 Web Technology.</p>
+    </div>
+  </footer>
+
+  <script src="digest.js" defer></script>
+  <script src="image-with-fallback.js" defer></script>
+  <script src="media.js" defer></script>
+</body>
+</html>
